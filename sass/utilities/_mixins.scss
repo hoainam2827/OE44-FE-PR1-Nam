@@ -1,0 +1,36 @@
+@mixin tranformCenter($direction: "left"){
+    position: absolute;
+    @if $direction == "left"{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @if $direction == "top"{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    @if $direction == "both"{
+        top: 50%;
+        left: 50%;
+        transform:  translate(-50%, -50%);
+    }
+}
+
+@mixin maxWidth($value){
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}
+
+@mixin minWidth($value){
+    @media screen and (min-width: $value) {
+        @content;
+    }
+}
+
+@mixin flex ($direc: column, $text-align: center, $justify: center){
+    flex-direction: $direc;
+    text-align: $text-align;
+    justify-content: $justify;
+}

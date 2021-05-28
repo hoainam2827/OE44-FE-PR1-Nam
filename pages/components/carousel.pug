@@ -1,0 +1,29 @@
+mixin carousel-header()
+    div.carousel.slide(id="carousel-header", data-ride="carousel", data-interval="5000")
+        ol.carousel-indicators
+            li.active(data-target='#carousel-header' data-slide-to='0')
+            li(data-target='#carousel-header' data-slide-to='1')
+            li(data-target='#carousel-header' data-slide-to='2')
+        .carousel-inner
+            each item in header_carousel_items
+                //- - console.log(item)
+                if item.img === header_carousel_items[0].img
+                    .carousel-item.active
+                        img(src="../assets/img/" + item.img, alt="image")
+                        .carousel__content
+                            h2.carousel-title=item.title
+                            span.carousel-year="Since" + item.year
+                            span.carousel-subtitle=item.subtitle
+                else
+                    .carousel-item
+                        img(src="../assets/img/" + item.img, alt="image")
+                        .carousel__content
+                            h2.carousel-title=item.title
+                            span.carousel-year="Since" + item.year
+                            span.carousel-subtitle=item.subtitle
+        a.carousel-control-prev(href='#carousel-header' role='button' data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+        a.carousel-control-next(href='#carousel-header' role='button' data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
