@@ -37,11 +37,9 @@ header.header
                                                 li.active
                                                     h3=mega_title
                                                     each mega_list_item in list_items
-                                                        //- - console.log(mega_list_item)
                                                         a(href="#")=mega_list_item
                                         .sub_img
                                             img(src="../assets/img/gallery-2.jpg" alt="a")
                             else
                                 li.active
                                     a(href=link, class=`${current === link ? 'active' : ''}`).main_items=title
-                                    //- - console.log(title)

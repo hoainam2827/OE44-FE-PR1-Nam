@@ -34,3 +34,10 @@
     text-align: $text-align;
     justify-content: $justify;
 }
+
+@mixin text_ellipsis($number) {
+    display: -webkit-box;
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

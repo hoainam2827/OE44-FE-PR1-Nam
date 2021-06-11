@@ -67,3 +67,75 @@
         }
     }
 }
+
+.owl-carousel{
+    .owl-prev, .owl-next{
+        font-size: 4.3rem !important;
+        left: -3%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        outline: none;
+        z-index: 10;
+
+        &:hover{
+            background-color: transparent !important;
+            color: $primary-color !important;
+            transition: all 0.3s !important;
+        }
+    }
+
+    .owl-next{
+        left: 100%;
+    }
+
+    .new_product_item{
+        .new_product_name{
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        &:hover .new_product_name{
+            color: $primary-color;
+            transition: all 0.3s;
+        }
+
+        &:hover .btn-main{
+            background-color: $primary-color;
+            transition: all 0.3s;
+        }
+
+        .price{
+            color: $primary-color;
+            font-size: 1.2rem;
+            position: relative;
+
+            span{
+                font-size: 13px;
+                position: absolute;
+                padding: 0 5px 0 0;
+                top: 0;
+            }
+        }
+
+        span{
+            padding: 0 5px 0 10px;
+        }
+
+        .old-price{
+            font-size: 0.8rem;
+            position: relative;
+            text-decoration: line-through;
+
+            span{
+                font-size: 13px;
+                position: absolute;
+                padding: 0 5px 0 0;
+                top: -2px;
+            }
+        }
+    }
+}

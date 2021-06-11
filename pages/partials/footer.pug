@@ -18,7 +18,6 @@ footer#footer
                                 h3=title
                                 ul
                                     each sub_item in items
-                                        - console.log(sub_item)
                                         - const { title, link } = sub_item
                                         li
                                             a(href=link)=title 
