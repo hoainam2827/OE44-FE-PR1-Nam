@@ -1,0 +1,302 @@
+#product{
+    .banner{
+        background: url('../assets/img/slide-3.jpg') no-repeat center center / cover;
+        height: 40vh;
+    }
+
+    .title{
+        background: url(../assets/img/titleleft-dark.png) no-repeat left bottom;
+        color: $black;
+        letter-spacing: normal;
+    }
+
+    .product-bar{
+        color: $dark-gray;
+        padding: 3rem 0;
+
+        .product-gallery{
+            
+            h3{
+                font-size: 1rem;
+                font-weight: 500;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+
+            li{
+                a{
+                    color: $dark-gray;
+                    font-size: 0.85rem;
+                    overflow: hidden;
+                    position: relative;
+                    text-align: left;
+                    transition: all 0.3s;
+                    white-space: pre-wrap;
+
+                    &::after{
+                        content: "●";
+                        color: $primary-color;
+                        font-size: 1rem;
+                        left: 0;
+                        opacity: 0;
+                        overflow: hidden;
+                        position: absolute;
+                        transition: all 0.3s;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+
+                span{
+                    padding-left: 5px;
+                }
+
+                &:hover,
+                &.active{
+                    a{
+                        color: $primary-color;
+                        padding-left: 15px;
+                        transition: all 0.3s;
+                        white-space: pre-wrap;
+
+                        &::after{
+                            opacity: 1;
+                            overflow: visible;
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-compare{
+            p{
+                font-size: 0.85rem;
+            }
+        }
+
+        .product-tag{
+            .tag-link{
+                border: 1px solid $gray;
+                color: $dark-gray;
+                display: inline-block;
+                margin: 5px 15px 5px 0;
+                padding: 3px 6px;
+            }
+
+            .active{
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+
+        .product-adv{
+            padding-top: 2rem;
+        }
+    }
+
+    .product-main{
+        padding-top: 4.3rem;
+
+        .product-header{
+            border: 2px solid $gray;
+            display: flex;
+            justify-content: space-between;
+    
+            .product-header-left{
+                display: inline-block;
+                padding: 12px 16px;
+
+                label{
+                    margin-bottom: 0;
+                }
+
+                span{
+                    color: $dark-gray;
+                    font-size: 1.2rem;
+                    margin-right: 1rem;
+                }
+            }
+    
+            .product-header-right{
+                display: inline-block;
+                padding: 12px 16px;
+
+                ul{
+                    margin: 0;
+
+                    li{
+                        margin-right: 7px;
+
+                        a{
+                            color: $dark-gray;
+
+                            &:hover{
+                                color: $primary-color;
+                            }
+
+                        }
+                    }
+
+                    .active{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        .product-content{
+            .product-grid{
+                img{
+                    height: auto;
+                }
+
+                .name{
+                    font-size: 0.9rem;
+                    font-weight: 500;
+                    padding-top: 2rem;
+                    text-transform: uppercase;
+                }
+
+                .price{
+                    color: $primary-color;
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                    position: relative;
+
+                    span{
+                        font-size: 0.7rem;
+                        position: absolute;
+                    }
+                }
+
+                .old-price{
+                    display: inline-block;
+                    font-size: 0.8rem;
+                    margin-bottom: 0;
+                    position: relative;
+                    text-decoration: line-through;
+                }
+
+                .btn-main{
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 2rem;
+                    width: 47%;
+                }
+            }
+
+            .checkbox1{
+                &:checked ~ .product-list{
+                    display: none;
+                }
+
+                &:checked ~ .product-grid{
+                    display: block;
+                }
+            }
+
+            .checkbox2{
+                &:checked ~ .product-grid{
+                    display: none;
+                }
+
+                &:checked ~ .product-list{
+                    display: block;
+                }
+            }
+
+            .product-list{
+                @include maxWidth(767px){
+                    margin-bottom: 5rem;
+                }
+
+                .list-item{
+                    display: flex;
+
+                    .list-item-content{
+                        padding-top: 25px;
+
+                        @include maxWidth(767px){
+                            .name, .price{
+                                font-size: 1.2rem !important;
+                            }
+
+                            .desc{
+                                font-size: 0.8rem !important;
+                            }
+
+                            .btn-main{
+                                display: block;
+                            }
+                        }
+
+                        .name{
+                            color: $black;
+                            font-weight: 400;
+                            font-size: 1.5rem;
+                            text-transform: uppercase;
+                        }
+        
+                        .price{
+                            color: $primary-color;
+                            display: inline-block;
+                            font-size: 1.5rem;
+                            font-weight: 300;
+                            position: relative;
+
+                            span{
+                                font-size: 0.9rem;
+                                position: absolute;
+                            }
+                        }
+        
+                        .desc{
+                            color: $dark-gray;
+                            font-size: 0.9rem;
+
+                        }
+        
+                        .reaction{
+                            color: $dark-gray;
+                            margin: 21px 0 0 0;
+
+                            @include maxWidth(767px){
+                                display: block;
+                                flex-direction: column;
+                                text-align: center;
+                            }
+
+                            .action{
+                                font-size: 0.9rem;
+
+                                a{
+                                    color: $dark-gray;
+                                }
+
+                                i{
+                                    line-height: 30px;
+                                    padding:0 10px;
+                                }
+        
+                                span{
+                                    padding-right: 10px;
+                                }
+
+                                &:hover{
+                                    background-color: $primary-color;
+                                    transition: all 0.5s;
+
+                                    i, span{
+                                        color: $white;
+                                        transition: all 0.5s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
