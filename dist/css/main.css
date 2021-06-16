@@ -992,3 +992,72 @@ li {
             #product .product-main .product-content .product-list .list-item .list-item-content .reaction .action:hover i, #product .product-main .product-content .product-list .list-item .list-item-content .reaction .action:hover span {
               color: #ffffff;
               transition: all 0.5s; }
+
+#cart .title {
+  background: url(../assets/img/titleleft-dark.png) no-repeat left bottom;
+  color: #000000;
+  letter-spacing: normal; }
+
+#cart .cart-content {
+  display: block;
+  overflow-x: auto;
+  width: 100%; }
+  #cart .cart-content .cart-table {
+    border-collapse: collapse;
+    min-width: 600px;
+    margin: 0.5rem 0 1rem; }
+    #cart .cart-content .cart-table tr th {
+      font-size: 1rem;
+      font-weight: 500;
+      text-transform: uppercase; }
+    #cart .cart-content .cart-table tr th,
+    #cart .cart-content .cart-table tr td {
+      background-color: #eeeeee;
+      border: 1px solid #e6e6e6;
+      color: #000000;
+      padding: 1rem;
+      text-align: center; }
+      @media screen and (max-width: 767px) {
+        #cart .cart-content .cart-table tr th,
+        #cart .cart-content .cart-table tr td {
+          font-size: 0.8rem;
+          padding: 0.7rem; } }
+    #cart .cart-content .cart-table tbody tr .cart-img img {
+      align-items: center;
+      height: auto; }
+    #cart .cart-content .cart-table tbody tr .cart-name {
+      font-weight: 400;
+      font-size: 0.9rem;
+      text-transform: uppercase; }
+      @media screen and (max-width: 767px) {
+        #cart .cart-content .cart-table tbody tr .cart-name {
+          font-size: 0.8rem; } }
+    #cart .cart-content .cart-table tbody tr .cart-price .price, #cart .cart-content .cart-table tbody tr .cart-total .price {
+      color: #e3ab39;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      position: relative; }
+      @media screen and (max-width: 767px) {
+        #cart .cart-content .cart-table tbody tr .cart-price .price, #cart .cart-content .cart-table tbody tr .cart-total .price {
+          font-size: 0.9rem; } }
+      #cart .cart-content .cart-table tbody tr .cart-price .price span, #cart .cart-content .cart-table tbody tr .cart-total .price span {
+        font-size: 12px;
+        position: absolute; }
+    #cart .cart-content .cart-table tbody tr .cart-quantity input {
+      background-color: transparent;
+      border: 1px solid #818181;
+      height: 35px;
+      outline: none;
+      text-align: center;
+      width: 35px; }
+    #cart .cart-content .cart-table tbody tr .cart-cancer {
+      cursor: pointer;
+      margin-bottom: 0;
+      transition: all 0.3s ease-in; }
+      #cart .cart-content .cart-table tbody tr .cart-cancer:hover {
+        color: #e3ab39;
+        transition: all 0.3s ease-in; }
+  #cart .cart-content .cart-action button {
+    border: none;
+    margin: 1rem 0 5rem;
+    outline: none; }
