@@ -1091,3 +1091,82 @@ li {
     color: #818181;
     font-size: 0.9rem;
     margin-bottom: 0; }
+
+#blog .title {
+  background: url(../assets/img/titleleft-dark.png) no-repeat left bottom; }
+
+#blog .blog {
+  margin-bottom: 4rem; }
+  #blog .blog .blog-img {
+    height: 200px;
+    overflow: hidden;
+    position: relative; }
+    #blog .blog .blog-img::after {
+      background-color: rgba(255, 255, 255, 0.5);
+      content: '';
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      height: 101%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: -1px;
+      transition: clip-path 0.3s ease-in, opacity 0.3s linear,z-index 0.7s;
+      width: 101%;
+      z-index: -1; }
+    #blog .blog .blog-img:hover::after {
+      background-color: rgba(255, 255, 255, 0.5);
+      content: '';
+      clip-path: polygon(60% 40%, 100% 0, 100% 100%, -0.5% 100%);
+      opacity: 1;
+      position: absolute;
+      transition: clip-path 0.3s ease-in;
+      z-index: 1; }
+    #blog .blog .blog-img i {
+      background-color: #ffffff;
+      border-radius: 50%;
+      color: #818181;
+      font-size: 20px;
+      left: 0%;
+      opacity: 0;
+      position: absolute;
+      padding: 0.7rem;
+      top: 0%;
+      transition: all 0.3s ease-in;
+      z-index: 100; }
+      #blog .blog .blog-img i:hover {
+        background-color: #e3ab39; }
+    #blog .blog .blog-img:hover i {
+      opacity: 1;
+      transition: all 0.3s ease-in;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  #blog .blog .blog-content .title-blog {
+    color: #000000;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-top: 0.9rem;
+    text-transform: uppercase;
+    transition: all 0.2s; }
+    #blog .blog .blog-content .title-blog:hover {
+      color: #e3ab39;
+      transition: all 0.2s; }
+  #blog .blog .blog-content .info-blog {
+    color: #818181;
+    font-size: 0.9rem;
+    margin: 0.5rem 0; }
+  #blog .blog .blog-content .content-blog {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
+  #blog .blog .blog-content .read-more {
+    color: #e3ab39;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem; }
