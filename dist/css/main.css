@@ -1463,3 +1463,106 @@ li {
   .register .control-group button {
     margin-top: 0 !important;
     margin-right: 0.5rem; }
+
+#order .title {
+  background: url(../assets/img/titleleft-dark.png) no-repeat left bottom;
+  letter-spacing: 1px; }
+
+#order .order-link {
+  border: none;
+  background-color: transparent;
+  color: #000000; }
+  #order .order-link:hover {
+    color: #e3ab39;
+    transition: all 0.3s; }
+
+#order p {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 992px) {
+  #order .order-main {
+    flex-direction: column-reverse; } }
+
+#order .order-main .order-content {
+  margin-bottom: 5rem; }
+  #order .order-main .order-content .order-top {
+    border: 1px solid #e6e6e6;
+    border-bottom: 0px;
+    background-color: #eeeeee;
+    padding: 1.5rem; }
+    #order .order-main .order-content .order-top h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      padding-bottom: 1rem;
+      text-transform: uppercase; }
+    #order .order-main .order-content .order-top h3 {
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding-bottom: 0.5rem; }
+    #order .order-main .order-content .order-top ul {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -0.8rem; }
+      #order .order-main .order-content .order-top ul li {
+        font-size: 0.9rem;
+        position: relative;
+        padding: 0.2rem 0.8rem; }
+        #order .order-main .order-content .order-top ul li:not(:last-of-type):after {
+          border-right: 1px solid #818181;
+          content: '';
+          height: 15px;
+          position: absolute;
+          right: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%); }
+  #order .order-main .order-content .order-bottom {
+    overflow-x: auto; }
+    #order .order-main .order-content .order-bottom .order-table tr th {
+      text-transform: uppercase; }
+    #order .order-main .order-content .order-bottom .order-table tr th,
+    #order .order-main .order-content .order-bottom .order-table tr td {
+      border: 1px solid #e6e6e6;
+      color: #000000;
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 1.3rem 0.5rem;
+      text-align: center; }
+    #order .order-main .order-content .order-bottom .order-table span {
+      color: #818181; }
+
+#order .order-main .customer-info {
+  border: 1px solid #e6e6e6;
+  background-color: #eeeeee;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem; }
+  #order .order-main .customer-info .info-item {
+    position: relative;
+    padding-left: 25px;
+    padding-bottom: 10px; }
+  #order .order-main .customer-info span {
+    left: 0;
+    position: absolute;
+    top: 5px; }
+  #order .order-main .customer-info h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    text-transform: uppercase; }
+  #order .order-main .customer-info h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0; }
+  #order .order-main .customer-info p {
+    font-size: 0.9rem;
+    word-break: break-word; }
+  #order .order-main .customer-info a {
+    border-bottom: 1px solid #000000;
+    color: #000000;
+    display: inline-block;
+    margin-top: 2rem; }
+    #order .order-main .customer-info a:hover {
+      border-bottom: 1px solid #e3ab39;
+      color: #e3ab39;
+      transition: all 0.3s; }
