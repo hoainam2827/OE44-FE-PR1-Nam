@@ -1408,7 +1408,7 @@ li {
         flex-direction: column; } }
     #login .login-form .input-area label {
       display: block;
-      width: 150px; }
+      width: 170px; }
       #login .login-form .input-area label span {
         color: #c30100;
         padding-left: 3px; }
@@ -1422,7 +1422,7 @@ li {
           width: 100%; } }
   #login .login-form .form-options {
     display: flex;
-    padding-left: 150px;
+    padding-left: 170px;
     flex-direction: row;
     text-align: center;
     justify-content: space-between; }
@@ -1442,10 +1442,24 @@ li {
         transition: all 0.3s; }
   #login .login-form button {
     border: none;
-    margin-left: 150px;
+    margin-left: 170px;
     margin-top: 1rem;
     outline: none; }
     @media screen and (max-width: 767px) {
       #login .login-form button {
         margin-left: 0;
         padding-left: 14px; } }
+
+.register h3 {
+  margin: 0 0 1.5rem; }
+
+.register .form-options .form-check label {
+  margin-bottom: 1.5rem; }
+
+.register .control-group {
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-end; }
+  .register .control-group button {
+    margin-top: 0 !important;
+    margin-right: 0.5rem; }

@@ -39,7 +39,7 @@
 
             label{
                 display: block;
-                width: 150px;
+                width: 170px;
 
                 span{
                     color: $red;
@@ -60,7 +60,7 @@
 
         .form-options{
             display: flex;
-            padding-left: 150px;
+            padding-left: 170px;
             @include flex(row, center, space-between);
             @include maxWidth(767px){
                 padding-left: 0;
@@ -78,6 +78,7 @@
             .forget-link{
                 color: $black;
                 font-size: 0.9rem;
+
                 &:hover{
                     color: $primary-color;
                     transition: all 0.3s;
@@ -87,13 +88,39 @@
 
         button{
             border: none;
-            margin-left: 150px;
+            margin-left: 170px;
             margin-top: 1rem;
             outline: none;
+            
             @include maxWidth(767px){
                 margin-left: 0;
                 padding-left: 14px;
             }
+        }
+    }
+}
+
+.register{
+    h3{
+        margin: 0 0 1.5rem;
+    }
+
+    .form-options{
+        .form-check{
+            label{
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    .control-group{
+        align-items: flex-start;
+        display: flex;
+        justify-content: flex-end;
+
+        button{
+            margin-top: 0 !important;
+            margin-right: 0.5rem;
         }
     }
 }
