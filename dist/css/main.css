@@ -1376,3 +1376,76 @@ li {
   #blog-detail .blog-detail .blog-detail-content .blog-text ul .active {
     background-color: #818181;
     color: #ffffff; }
+
+#login .login-header {
+  padding-bottom: 2rem;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between; }
+  #login .login-header .title {
+    background: url(../assets/img/titleleft-dark.png) no-repeat left bottom; }
+  #login .login-header a {
+    height: 50%;
+    margin-top: 1rem;
+    padding: 10px 25px; }
+
+#login .login-form {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 5rem;
+  padding: 2rem; }
+  #login .login-form h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  #login .login-form p {
+    margin-bottom: 2.5rem; }
+  #login .login-form .input-area {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem; }
+    @media screen and (max-width: 767px) {
+      #login .login-form .input-area {
+        flex-direction: column; } }
+    #login .login-form .input-area label {
+      display: block;
+      width: 150px; }
+      #login .login-form .input-area label span {
+        color: #c30100;
+        padding-left: 3px; }
+    #login .login-form .input-area input {
+      border: 1px solid #e6e6e6;
+      outline: none;
+      padding: 0.1rem 0.8rem;
+      width: calc( 100% - 150px); }
+      @media screen and (max-width: 767px) {
+        #login .login-form .input-area input {
+          width: 100%; } }
+  #login .login-form .form-options {
+    display: flex;
+    padding-left: 150px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between; }
+    @media screen and (max-width: 767px) {
+      #login .login-form .form-options {
+        padding-left: 0; } }
+    #login .login-form .form-options .form-check {
+      padding-left: 0; }
+      #login .login-form .form-options .form-check label {
+        color: #000000;
+        font-size: 0.9rem; }
+    #login .login-form .form-options .forget-link {
+      color: #000000;
+      font-size: 0.9rem; }
+      #login .login-form .form-options .forget-link:hover {
+        color: #e3ab39;
+        transition: all 0.3s; }
+  #login .login-form button {
+    border: none;
+    margin-left: 150px;
+    margin-top: 1rem;
+    outline: none; }
+    @media screen and (max-width: 767px) {
+      #login .login-form button {
+        margin-left: 0;
+        padding-left: 14px; } }

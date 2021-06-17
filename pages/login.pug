@@ -1,0 +1,34 @@
+extends ./base/base.pug
+
+block variables
+    - const title = "Login";
+    - const current = "/login.html";
+
+    include ./variables/breadcrumb_var.pug
+    include ./variables/blog_var.pug
+    include ./components/breadcrumb.pug
+
+block content
+    +breadcrumb(login_breadcrumb, current)
+    section#login
+        .container
+            .login-header.d-flex
+                h1.title Đăng nhập
+                a.btn-main(href="#") Đăng ký
+            form.login-form
+                h3 Khách hàng đăng nhập
+                p Nếu bạn có một tài khoản, xin vui lòng đăng nhập.
+                .input-area
+                    label(for="email") Email
+                        span *
+                    input#email(type="email")
+                .input-area
+                    label(for="password") Password
+                        span *
+                    input#password(type="password")
+                .form-options
+                    .form-check
+                        label(for="save-pass") Lưu mật khẩu
+                            input#save-pass(type="checkbox")
+                    a.forget-link(href="#") Quên mật khẩu?
+                button.btn-main Đăng nhập

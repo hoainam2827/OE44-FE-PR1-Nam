@@ -1,0 +1,99 @@
+#login{
+    .login-header{
+        padding-bottom: 2rem;
+        @include flex(row, center, space-between);
+
+        .title{
+            background: url(../assets/img/titleleft-dark.png) no-repeat left bottom;
+        }
+
+        a{
+            height: 50%;
+            margin-top: 1rem;
+            padding: 10px 25px;
+        }
+    }
+
+    .login-form{
+        border: 1px solid $gray;
+        margin-bottom: 5rem;
+        padding: 2rem;
+
+        h3{
+            font-size: 1.1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        p{
+            margin-bottom: 2.5rem;
+        }
+
+        .input-area{
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 2rem;
+            @include maxWidth(767px){
+                flex-direction: column;
+            }
+
+            label{
+                display: block;
+                width: 150px;
+
+                span{
+                    color: $red;
+                    padding-left: 3px;
+                }
+            }
+
+            input{
+                border: 1px solid $gray;
+                outline: none;
+                padding: 0.1rem 0.8rem;
+                width: calc( 100% - 150px );
+                @include maxWidth(767px){
+                    width: 100%;
+                }
+            }
+        }
+
+        .form-options{
+            display: flex;
+            padding-left: 150px;
+            @include flex(row, center, space-between);
+            @include maxWidth(767px){
+                padding-left: 0;
+            }
+
+            .form-check{
+                padding-left: 0;
+
+                label{
+                    color: $black;
+                    font-size: 0.9rem;
+                }
+            }
+
+            .forget-link{
+                color: $black;
+                font-size: 0.9rem;
+                &:hover{
+                    color: $primary-color;
+                    transition: all 0.3s;
+                }
+            }
+        }
+
+        button{
+            border: none;
+            margin-left: 150px;
+            margin-top: 1rem;
+            outline: none;
+            @include maxWidth(767px){
+                margin-left: 0;
+                padding-left: 14px;
+            }
+        }
+    }
+}
