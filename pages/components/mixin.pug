@@ -1,0 +1,10 @@
+mixin address(id, name, content)
+    .address-form.row
+        if id != ''
+            label.col-sm-3(for=id)=name
+            .col-sm-9
+                input.form-text(id=id type='text' value=content)
+        else
+            label.col-sm-3.show-info=name
+            .col-sm-9
+                span.show-info-content=content

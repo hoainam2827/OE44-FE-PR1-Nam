@@ -1566,3 +1566,65 @@ li {
       border-bottom: 1px solid #e3ab39;
       color: #e3ab39;
       transition: all 0.3s; }
+
+#address .title {
+  background: url(../assets/img/titleleft-dark.png) no-repeat left bottom; }
+
+#address h3 {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  text-transform: uppercase; }
+  @media screen and (max-width: 992px) {
+    #address h3 {
+      margin-top: 2rem; } }
+
+#address .text-right a, #address .text-left a {
+  border-bottom: 1px solid #44C7DC;
+  color: #44C7DC;
+  display: inline-block;
+  margin-bottom: 2rem; }
+  #address .text-right a:hover, #address .text-left a:hover {
+    border-bottom: 1px solid #e3ab39;
+    color: #e3ab39;
+    transition: all 0.3s; }
+
+#address .text-left a {
+  margin-bottom: 0 !important; }
+
+#address .address-customer {
+  border-bottom: 1px solid #eeeeee; }
+  #address .address-customer .address-form {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    #address .address-customer .address-form label {
+      display: block;
+      width: 100%; }
+    #address .address-customer .address-form .form-text {
+      border: 1px solid #e6e6e6;
+      outline: none;
+      padding: 0.2rem 0.5rem;
+      margin: 0 0 15px;
+      width: 100%; }
+    #address .address-customer .address-form span {
+      margin: 0 0 1rem;
+      padding: 0.2rem 0.5rem;
+      width: 100%; }
+  #address .address-customer .form-check {
+    padding-left: 0; }
+    #address .address-customer .form-check label {
+      margin: 0 0 1.5rem; }
+  #address .address-customer .btn-address {
+    background-color: #44C7DC;
+    margin-right: 0.3rem;
+    margin-bottom: 2rem; }
+    #address .address-customer .btn-address:hover {
+      background-color: #e3ab39;
+      transition: all 0.3s; }
+  #address .address-customer .show-info {
+    margin: 0.7rem 0; }
+  #address .address-customer .show-info-content {
+    padding: 0 !important; }
