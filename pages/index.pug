@@ -7,6 +7,20 @@ block variables
     include ./variables/index_variables.pug
     include ./components/carousel.pug
 block content
+    section#popup
+        input#login-popup(type='checkbox')
+        .popup
+            label.transparent-label(for='login-popup')
+            label.popup-close-btn(for='login-popup') Close
+            .popup-inner.row.text-center
+                .popup-img.col-lg-4.col-sm-4
+                    img(src="../assets/img/1.jpg", alt="popup image")
+                .popup-content.col-lg-8.col-sm-8
+                    h2.popup-title Gửi Email
+                    p Đắng ký email ngay hôm nay để nhận được thông tin về các sự kiện, các chương trình giảm giá sớm nhất.
+                    form
+                        input(type='email', placeholder='Email của bạn').popup-email
+                        button.btn-main.btn-popup Gửi email
     section#introduce
         .introduce-content.col-lg-6.col-md-8.text-center
             h2.title Giới thiệu
@@ -70,6 +84,7 @@ block content
                             .blog_items.col-lg-6
                                 .blog-img
                                     img(src="../assets/img/" + img, alt="image")
+                                    i.fas.fa-link
                                 .blog-content
                                     a(href="#").title-blog= title
                                     p.info-blog= "Đăng bởi " +author + " | " + date + " | " + comment + " bình luận"

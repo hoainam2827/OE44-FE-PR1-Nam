@@ -9,7 +9,7 @@
         font-weight: 400;
         padding-bottom: 1rem;
         text-transform: uppercase;
-        @include maxWidth(992px){
+        @include respond(tablet-lg, down){
             margin-top: 2rem;
         }
     }

@@ -19,11 +19,12 @@ block content
                     each item in blog_list
                         - const {img, title, author, date, comment, content}=item
                         .col-lg-4.col-md-6
-                            .blog-img
-                                img(src="../assets/img/"+img, alt="blog image")
-                                i.fas.fa-link
-                            .blog-content
-                                a(href="#").title-blog= title
-                                p.info-blog= "Đăng bởi " +author + " | " + date + " | " + comment + " bình luận"
-                                p.content-blog= content
-                                a(href="#").read-more Read more
+                            article.blog-item
+                                .blog-img
+                                    img(src="../assets/img/"+img, alt="blog image")
+                                    i.fas.fa-link
+                                .blog-content
+                                    a(href="#").title-blog= title
+                                    p.info-blog= "Đăng bởi " +author + " | " + date + " | " + comment + " bình luận"
+                                    p.content-blog= content
+                                    a(href="#").read-more Read more

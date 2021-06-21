@@ -5,6 +5,8 @@
         }
 
         .header-top-left{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             @include flex(row);
             margin-bottom: 0;
@@ -14,7 +16,7 @@
                     content: "-";
                 }
 
-                @include maxWidth(1200px){
+                @include respond(desktop, down){
                     &:not(:nth-last-of-type(-n + 2)) {
                         display: none;
                       }
@@ -85,17 +87,25 @@
 
             .navbar-collapse {
                 ul{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
                     li{
                         letter-spacing: 1.5px;
                         margin: 5px;
                         .main_items{
-                            align-items: center;
+                            -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                    align-items: center;
                             color: white;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
                             font-size: 0.8rem;
                             font-weight: 500;
-                            justify-content: center;
+                            -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                    justify-content: center;
                             letter-spacing: 2px;
                             padding: 0 0 0 15px;
                             position: relative;
@@ -106,10 +116,12 @@
                             color:$primary-color
                         }
 
-                        @include maxWidth(991px){
+                        @include respond(tablet-lg, down){
                             .main_items{
                                 font-size: 1rem;
-                                justify-content: start;
+                                -webkit-box-pack: start;
+                                    -ms-flex-pack: start;
+                                        justify-content: start;
                                 padding: 5px 0;
                             }
 
@@ -129,8 +141,13 @@
                             width: 1000px;
                             z-index: 10000;
                             li{
+                                display: -webkit-box;
+                                display: -ms-flexbox;
                                 display: flex;
-                                flex-direction: column;
+                                -webkit-box-orient: vertical;
+                                -webkit-box-direction: normal;
+                                    -ms-flex-direction: column;
+                                        flex-direction: column;
                                 width: 25%;
                                 h3 {
                                     font-weight: 600;
@@ -147,14 +164,18 @@
                                     text-transform: capitalize;
                                     &:hover{
                                         color: $primary-color;
+                                        -webkit-transition: all 0.3s;
+                                        -o-transition: all 0.3s;
                                         transition: all 0.3s;
                                     }
                                 }
                             }
                         }
                         &:hover .mega_menu_list {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
                             display: flex;
-                            @include maxWidth(991px){
+                            @include respond(tablet-lg, down){
                                 display: none;
                             }
                         }
@@ -190,9 +211,9 @@
                                     top: 263%;
                                     opacity: 1;
                                     visibility: visible;
-                                    @include maxWidth(991px){
+                                    @include respond(tablet-lg, down){
                                         opacity: 0;
-                                        visibility: hidden;
+                                        visibility: hidden; 
                                     }
                                 }
                             }

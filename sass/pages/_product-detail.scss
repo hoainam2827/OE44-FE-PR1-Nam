@@ -1,7 +1,10 @@
 #product-detail{
     .detail-top{
-        @include maxWidth(767px){
-            flex-direction: column !important;
+        @include respond(tablet, down){
+            -webkit-box-orient: vertical !important;
+            -webkit-box-direction: normal !important;
+                -ms-flex-direction: column !important;
+                    flex-direction: column !important;
         }
 
         .product-img{
@@ -22,7 +25,7 @@
                 margin-bottom: 0;
                 padding-top: 0;
 
-                @include maxWidth(767px){
+                @include respond(tablet, down){
                     font-size: 1.5rem;
                     padding-top: 1rem;
                 }
@@ -36,7 +39,7 @@
                 padding: 7px 0;
                 position: relative;
 
-                @include maxWidth(767px){
+                @include respond(tablet, down){
                     font-size: 1.5rem;
 
                     span{
@@ -50,7 +53,7 @@
                     padding: 0 5px 0 0;
                     top: 0;
 
-                    @include maxWidth(767px){
+                    @include respond(tablet, down){
                         font-size: 12px;
                         top: 7px;
                     }
@@ -124,7 +127,7 @@
                 color: $dark-gray;
                 margin: 21px 0 0 0;
 
-                @include maxWidth(767px){
+                @include respond(tablet, down){
                     font-size: 1rem
                 }
 
@@ -151,7 +154,7 @@
                 font-size: 14px;
                 line-height: 1.65;
 
-                @include maxWidth(767px){
+                @include respond(tablet, down){
                     font-size: 14px;
                 }
             }
@@ -160,19 +163,24 @@
     
     
     .detail-desc{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 5rem 0;
         position: relative;
 
-        @include maxWidth(992px){
-            flex-wrap: wrap-reverse;
+        @include respond(tablet-lg, down){
+            -ms-flex-wrap: wrap-reverse;
+                flex-wrap: wrap-reverse;
         }
 
         .group-desc{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             position: relative;
 
-            @include maxWidth(992px){
+            @include respond(tablet-lg, down){
                 padding-top: 2rem;
                 padding-bottom: 12rem;
             }
@@ -181,7 +189,7 @@
                 .checkbox{
                     display: none;
 
-                    &:checked ~ {
+                    &:checked ~ { 
                         label{
                             background-color: $primary-color;
                             color: $white;
@@ -201,7 +209,7 @@
                     width: 100%;
                     word-spacing: 2px;
 
-                    @include maxWidth(567px){
+                    @include respond(phone, down){
                         font-size: 0.8rem
                     }
                 }

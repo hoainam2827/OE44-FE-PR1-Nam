@@ -23,12 +23,12 @@
                 margin-bottom: 1rem;
                 text-transform: uppercase;
 
-                @include maxWidth(767px){
+                @include respond(tablet, down){
                     font-size: 1.5rem;
                     margin-top: 1rem;
                 }
 
-                @include maxWidth(992px){
+                @include respond(tablet-lg, down){
                     font-size: 1.5rem;
                 }
             }

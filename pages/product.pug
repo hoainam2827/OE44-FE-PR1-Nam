@@ -73,7 +73,17 @@ block content
                                 each item in product_list_items
                                     - const {name, img, price, oldPrice} = item;
                                     .col-md-4.col-sm-6.text-center
-                                        img(src="../assets/img/" +img, alt="image item")
+                                        .product_grid-img
+                                            img(src="../assets/img/" +img, alt="image item")
+                                            .product-action
+                                                .product-action-item
+                                                    span.fas.fa-heart
+                                                    | Yêu thích
+                                                .product-action-item
+                                                    span.fas.fa-signal
+                                                    | So sánh
+                                                .product-action-item
+                                                    span.fas.fa-compress-alt
                                         h3.name=name
                                         p.price=price
                                             span đ

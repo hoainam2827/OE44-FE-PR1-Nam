@@ -5,13 +5,14 @@
 
             &:not(:last-child){
                 border-right: 1px solid $gray;
-                @include maxWidth(576px){
+                @include respond(phone, down){
                     border-right: 0px solid transparent;
                 }
             }
 
             img{
-                filter: grayscale(1);
+                -webkit-filter: grayscale(1);
+                        filter: grayscale(1);
             }
         }
     }
@@ -92,7 +93,7 @@
         }
 
         .footer__main-info{
-            @include maxWidth(767px){
+            @include respond(tablet, down){
                 padding-top: 15px;
             }
             span{
@@ -125,9 +126,11 @@
         border-top: 1px solid $gray;
         padding-left: 15px;
         .container{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             @include flex(row, center, space-between);
-            @include maxWidth(767px){
+            @include respond(tablet, down){
                 @include flex(column, start, space-between);
             }
             padding: 15px 0 0 0;
@@ -139,7 +142,8 @@
     
             img{
                 max-width: 260px;
-                filter: grayscale(1);
+                -webkit-filter: grayscale(1);
+                        filter: grayscale(1);
             }
         }
     }

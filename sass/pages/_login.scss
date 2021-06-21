@@ -30,11 +30,19 @@
         }
 
         .input-area{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            flex-direction: row;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
             padding-bottom: 2rem;
-            @include maxWidth(767px){
-                flex-direction: column;
+            @include respond(tablet, down){
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
             }
 
             label{
@@ -52,17 +60,19 @@
                 outline: none;
                 padding: 0.1rem 0.8rem;
                 width: calc( 100% - 150px );
-                @include maxWidth(767px){
+                @include respond(tablet, down){
                     width: 100%;
                 }
             }
         }
 
         .form-options{
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
             padding-left: 170px;
             @include flex(row, center, space-between);
-            @include maxWidth(767px){
+            @include respond(tablet, down){
                 padding-left: 0;
             }
 
@@ -81,6 +91,8 @@
 
                 &:hover{
                     color: $primary-color;
+                    -webkit-transition: all 0.3s;
+                    -o-transition: all 0.3s;
                     transition: all 0.3s;
                 }
             }
@@ -92,7 +104,7 @@
             margin-top: 1rem;
             outline: none;
             
-            @include maxWidth(767px){
+            @include respond(tablet, down){
                 margin-left: 0;
                 padding-left: 14px;
             }
@@ -114,9 +126,15 @@
     }
 
     .control-group{
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
 
         button{
             margin-top: 0 !important;

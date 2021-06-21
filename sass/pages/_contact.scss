@@ -61,7 +61,7 @@
                 color: #818181;
                 font-size: 1.5rem;
                 margin-right: 2rem;
-                @include maxWidth(992px){
+                @include respond(tablet-lg, down){
                     display: inline-block;
                     margin-bottom: 1rem;
                 }

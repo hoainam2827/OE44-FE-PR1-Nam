@@ -20,6 +20,12 @@ $blue: #44C7DC;
 $font-dancing: 'Dancing Script', sans-serif;
 $font-lobster: 'Lobster', sans-serif;
 $font-roboto: 'Roboto Slab', sans-serif;
+$breakpoints: (
+    phone: 576px,
+    tablet: 767px,
+    tablet-lg: 991px,
+    desktop: 1200px
+);
 
 body {
   font-family: "Roboto Slab", sans-serif;
@@ -32,7 +38,8 @@ a{
 img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 li {

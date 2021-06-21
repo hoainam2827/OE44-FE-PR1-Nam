@@ -34,7 +34,15 @@ mixin new_product(array)
             .new_product_item.text-center
                 .new_product_img
                     img(src="../assets/img/" + img, alt="Image")
-
+                    div.product-action
+                        div.product-action-item
+                            span.fas.fa-heart
+                            | Yêu thích
+                        div.product-action-item
+                            span.fas.fa-signal
+                            | So sánh
+                        div.product-action-item
+                            span.fas.fa-compress-alt
                 h3.new_product_name= name 
                 .d-flex.text-center.align-items-center.justify-content-center
                     h4.price= price
