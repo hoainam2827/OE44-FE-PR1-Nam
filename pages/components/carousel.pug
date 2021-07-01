@@ -43,7 +43,8 @@ mixin new_product(array)
                             | So sánh
                         div.product-action-item
                             span.fas.fa-compress-alt
-                h3.new_product_name= name 
+                a(href="/product-detail.html") 
+                    h3.new_product_name= name 
                 .d-flex.text-center.align-items-center.justify-content-center
                     h4.price= price
                         span đ

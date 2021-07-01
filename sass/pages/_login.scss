@@ -35,14 +35,35 @@
             display: flex;
             -webkit-box-orient: horizontal;
             -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                    flex-direction: row;
-            padding-bottom: 2rem;
-            @include respond(tablet, down){
-                -webkit-box-orient: vertical;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            padding-bottom: 1rem;
+
+            .form-group{
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-box;
+                display: flex;
+                -webkit-box-orient: horizontal;
                 -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+                margin-bottom: 0;
+                @include respond(tablet, down){
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                }
+            }
+
+            .form-message{
+                color: $error-mess;
+                font-size: 0.9rem;
+                margin-left: 170px;
+                @include respond(tablet, down){
+                    margin-left: 0;
+                }
             }
 
             label{
@@ -63,6 +84,10 @@
                 @include respond(tablet, down){
                     width: 100%;
                 }
+            }
+
+            .invalid{
+                border-color: $error-mess;
             }
         }
 

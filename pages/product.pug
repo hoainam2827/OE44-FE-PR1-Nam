@@ -46,70 +46,75 @@ block content
                 .col-lg-9.product-main
                     .product-header
                         .product-header-left
-                            label(for='checkbox1')
+                            label(for='checkbox1').itemPerPage-grid
                                 span.fas.fa-th
-                            label(for='checkbox2')
+                            label(for='checkbox2').itemPerPage-list
                                 span.fas.fa-list
                         .product-header-right
                             ul.pagination
                                 li.page-item
-                                    a.page-prev(href='#')
+                                    button.page-prev(href='#')
                                         i.fas.fa-caret-left
-                                - for(var i=1; i<=5 ;i++)
-                                    if(i==2)
-                                        li.page-item
-                                            a(href='#').active= i
-                                    else
-                                        li.page-item
-                                            a(href='#')= i
+                                .list-page-item.d-flex
+                                //- - for(var i=1; i<=5 ;i++)
+                                //-     if(i==2)
+                                //-         li.page-item
+                                //-             a(href='#').active= i
+                                //-     else
+                                //-         li.page-item
+                                //-             a(href='#')= i
                                 li.page-item
-                                    a.page-prev(href='#')
+                                    button.page-next(href='#')
                                         i.fas.fa-caret-right
                     .product-content
                         input(name="checkbox-group" hidden checked type="radio" id="checkbox1").checkbox1
                         input(name="checkbox-group" hidden type="radio" id="checkbox2").checkbox2
                         .product-grid
                             .row
-                                each item in product_list_items
-                                    - const {name, img, price, oldPrice} = item;
-                                    .col-md-4.col-sm-6.text-center
-                                        .product_grid-img
-                                            img(src="../assets/img/" +img, alt="image item")
-                                            .product-action
-                                                .product-action-item
-                                                    span.fas.fa-heart
-                                                    | Yêu thích
-                                                .product-action-item
-                                                    span.fas.fa-signal
-                                                    | So sánh
-                                                .product-action-item
-                                                    span.fas.fa-compress-alt
-                                        h3.name=name
-                                        p.price=price
-                                            span đ
-                                        if oldPrice != ''
-                                            span  - 
-                                            p.old-price=oldPrice +'đ'
-                                        a(href="#").btn-main Add to cart 
+                            //-     each item in product_list_items
+                            //-         - const {name, img, price, oldPrice} = item;
+                            //-         .col-md-4.col-sm-6.text-center
+                            //-             .product_grid-img
+                            //-                 img(src="../assets/img/" +img, alt="image item")
+                            //-                 .product-action
+                            //-                     .product-action-item
+                            //-                         span.fas.fa-heart
+                            //-                         | Yêu thích
+                            //-                     .product-action-item
+                            //-                         span.fas.fa-signal
+                            //-                         | So sánh
+                            //-                     .product-action-item
+                            //-                         span.fas.fa-compress-alt
+                            //-             a(href="/product-detail.html") 
+                            //-                 h3.name=name
+                            //-             p.price=price
+                            //-                 span đ
+                            //-             if oldPrice != ''
+                            //-                 span  - 
+                            //-                 p.old-price=oldPrice +'đ'
+                            //-             a(href="#").btn-main Add to cart 
                         .product-list
-                            - for(var i=0; i<4; i++)
-                                - const {name, img, price, desc}=product_list_items[i];
-                                .list-item
-                                    .col-md-4
-                                        img(src="../assets/img/" +img, alt="image item")
-                                    .col-md-8.list-item-content
-                                        h3.name=name
-                                        p.price=price
-                                            span đ
-                                        p.desc=desc
-                                        .reaction.d-flex
-                                            .action
-                                                a(href="#").btn-main ADD TO CART
-                                            .action
-                                                a(href="#") 
-                                                    i.fas.fa-heart 
-                                                    span Yêu Thích
-                                            .action
-                                                a(href="#") 
-                                                    i.fas.fa-signal
-                                                    span So Sánh
+                            //- - for(var i=0; i<4; i++)
+                            //-     - const {name, img, price, desc}=product_list_items[i];
+                            //-     .list-item
+                            //-         .col-md-4
+                            //-             img(src="../assets/img/" +img, alt="image item")
+                            //-         .col-md-8.list-item-content
+                            //-             h3.name=name
+                            //-             p.price=price
+                            //-                 span đ
+                            //-             p.desc=desc
+                            //-             .reaction.d-flex
+                            //-                 .action
+                            //-                     a(href="#").btn-main ADD TO CART
+                            //-                 .action
+                            //-                     a(href="#") 
+                            //-                         i.fas.fa-heart 
+                            //-                         span Yêu Thích
+                            //-                 .action
+                            //-                     a(href="#") 
+                            //-                         i.fas.fa-signal
+                            //-                         span So Sánh
+block scripts
+    script(src="js/product.js")
+    script(src="js/panigation.js")

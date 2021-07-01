@@ -19,13 +19,17 @@ block content
                 h3 Khách hàng đăng nhập
                 p Nếu bạn có một tài khoản, xin vui lòng đăng nhập.
                 .input-area
-                    label(for="email") Email
-                        span *
-                    input#email(type="email")
+                    .form-group
+                        label(for="email") Email
+                            span *
+                        input#email(type="email")
+                    span.form-message
                 .input-area
-                    label(for="password") Password
-                        span *
-                    input#password(type="password")
+                    .form-group
+                        label(for="password") Password
+                            span *
+                        input#password(type="password")
+                    span.form-message
                 .form-options
                     .form-check
                         label(for="save-pass") Lưu mật khẩu

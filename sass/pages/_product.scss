@@ -139,13 +139,25 @@
                     li{
                         margin-right: 7px;
 
-                        a{
+                        button{
+                            background-color: transparent;
+                            border: none;
                             color: $dark-gray;
-
+                            cursor: pointer;
+                            outline: none;
+                            
                             &:hover{
                                 color: $primary-color;
                             }
+                        }
+                        
+                        .not-active{
+                           color: $light-gray !important; 
+                        }
 
+                        a{
+                            color: $dark-gray;
+                            cursor: pointer;
                         }
                     }
 
@@ -237,6 +249,7 @@
                 }
 
                 .name{
+                    color: $black;
                     font-size: 0.9rem;
                     font-weight: 500;
                     padding-top: 1rem;

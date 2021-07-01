@@ -15,33 +15,61 @@ block content
             .login-header.d-flex
                 h1.title Đăng ký
                 a.btn-main(href="/login.html") Đăng nhập
-            form.login-form
+            form.login-form#form-1
                 h3 Thông tin cá nhân
                 .input-area
-                    label(for="name") Họ &amp; tên đệm
-                        span *
-                    input#name(type="text")
+                    .form-group
+                        label(for="name") Họ &amp; tên đệm
+                            span *
+                        input#name(type="text")
+                    span.form-message
                 .input-area
-                    label(for="lastname") Tên
-                        span *
-                    input#lastname(type="text")
+                    .form-group
+                        label(for="lastname") Tên
+                            span *
+                        input#lastname(type="text")
+                    span.form-message
                 .input-area
-                    label(for="email") Email
-                        span *
-                    input#email(type="email")
+                    .form-group
+                        label(for="email") Email
+                            span *
+                        input#email(type="email")
+                    span.form-message
                 .form-options
-                    .form-check
-                        label(for="save-pass") Đăng ký nhận bản tin
-                            input#save-pass(type="checkbox")
+                    .form-group
+                        .form-check
+                            label(for="save-pass") Đăng ký nhận bản tin
+                                input#save-pass(type="checkbox")
                 h3 Thông tin đăng nhập
                 .input-area
-                    label(for="password") Mật khẩu
-                        span *
-                    input#password(type="password")
+                    .form-group
+                        label(for="password") Mật khẩu
+                            span *
+                        input#password(type="password")
+                    span.form-message
                 .input-area
-                    label(for="re-password") Xác nhận mật khẩu
-                        span *
-                    input#re-password(type="password")
+                    .form-group
+                        label(for="re-password") Xác nhận mật khẩu
+                            span *
+                        input#re-password(type="password")
+                    span.form-message
                 .control-group
                     button.btn-main gửi
-                    a(href="/index.html").btn-main Quay lại 
+                    a(href="/index.html").btn-main Quay lại
+block scripts
+    script(src='js/validator.js')
+    script.
+        Validator({
+            form: '#form-1',
+            errorSelector: '.form-message',
+            formGroupSelector: '.input-area',
+            rules: [
+                Validator.isRequired('#name'),
+                Validator.isRequired('#lastname'),
+                Validator.isEmail('#email'),
+                Validator.minlength('#password', 8),
+                Validator.isConfirmed('#re-password', function(){
+                    return document.querySelector('#form-1 #password').value;
+                }, "Mật khẩu nhập lại không chính xác"),
+            ]
+        });

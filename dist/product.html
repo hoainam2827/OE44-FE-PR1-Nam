@@ -144,18 +144,18 @@
           <div class="col-lg-9 product-main">
             <div class="product-header">
               <div class="product-header-left">
-                <label for="checkbox1"><span class="fas fa-th"></span></label>
-                <label for="checkbox2"><span class="fas fa-list"></span></label>
+                <label class="itemPerPage-grid" for="checkbox1"><span class="fas fa-th"></span></label>
+                <label class="itemPerPage-list" for="checkbox2"><span class="fas fa-list"></span></label>
               </div>
               <div class="product-header-right">
                 <ul class="pagination">
-                  <li class="page-item"><a class="page-prev" href="#"><i class="fas fa-caret-left"></i></a></li>
-                  <li class="page-item"><a href="#">1</a></li>
-                  <li class="page-item"><a class="active" href="#">2</a></li>
-                  <li class="page-item"><a href="#">3</a></li>
-                  <li class="page-item"><a href="#">4</a></li>
-                  <li class="page-item"><a href="#">5</a></li>
-                  <li class="page-item"><a class="page-prev" href="#"><i class="fas fa-caret-right"></i></a></li>
+                  <li class="page-item">
+                    <button class="page-prev" href="#"><i class="fas fa-caret-left"></i></button>
+                  </li>
+                  <div class="list-page-item d-flex"></div>
+                  <li class="page-item">
+                    <button class="page-next" href="#"><i class="fas fa-caret-right"></i></button>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -163,221 +163,9 @@
               <input class="checkbox1" name="checkbox-group" hidden checked type="radio" id="checkbox1">
               <input class="checkbox2" name="checkbox-group" hidden type="radio" id="checkbox2">
               <div class="product-grid">
-                <div class="row">
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/1.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">330.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/2.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">370.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/3.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">230.000<span>đ</span></p><span> - </span>
-                    <p class="old-price">370.000đ</p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/4.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">450.000<span>đ</span></p><span> - </span>
-                    <p class="old-price">630.000đ</p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/5.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">330.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/6.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">430.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/7.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">230.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/8.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">670.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/9.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">730.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/10.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">330.000<span>đ</span></p><span> - </span>
-                    <p class="old-price">370.000đ</p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/11.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">330.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/12.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">330.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/13.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">330.000<span>đ</span></p><span> - </span>
-                    <p class="old-price">370.000đ</p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 text-center">
-                    <div class="product_grid-img"><img src="../assets/img/14.jpg" alt="image item">
-                      <div class="product-action">
-                        <div class="product-action-item"><span class="fas fa-heart"></span>Yêu thích</div>
-                        <div class="product-action-item"><span class="fas fa-signal"></span>So sánh</div>
-                        <div class="product-action-item"><span class="fas fa-compress-alt"></span></div>
-                      </div>
-                    </div>
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">530.000<span>đ</span></p><a class="btn-main" href="#">Add to cart </a>
-                  </div>
-                </div>
+                <div class="row"></div>
               </div>
-              <div class="product-list">
-                <div class="list-item">
-                  <div class="col-md-4"><img src="../assets/img/1.jpg" alt="image item"></div>
-                  <div class="col-md-8 list-item-content">
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">330.000<span>đ</span></p>
-                    <p class="desc">Một hợp chất có trong rượu vang gọi là resverato có khả năng làm tăng tối đa tuổi thọ. Resverato còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.</p>
-                    <div class="reaction d-flex">
-                      <div class="action"><a class="btn-main" href="#">ADD TO CART</a></div>
-                      <div class="action"><a href="#"> <i class="fas fa-heart"> </i><span>Yêu Thích</span></a></div>
-                      <div class="action"><a href="#"> <i class="fas fa-signal"></i><span>So Sánh</span></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-item">
-                  <div class="col-md-4"><img src="../assets/img/2.jpg" alt="image item"></div>
-                  <div class="col-md-8 list-item-content">
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">370.000<span>đ</span></p>
-                    <p class="desc">Một hợp chất có trong rượu vang gọi là resverato có khả năng làm tăng tối đa tuổi thọ. Resverato còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.</p>
-                    <div class="reaction d-flex">
-                      <div class="action"><a class="btn-main" href="#">ADD TO CART</a></div>
-                      <div class="action"><a href="#"> <i class="fas fa-heart"> </i><span>Yêu Thích</span></a></div>
-                      <div class="action"><a href="#"> <i class="fas fa-signal"></i><span>So Sánh</span></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-item">
-                  <div class="col-md-4"><img src="../assets/img/3.jpg" alt="image item"></div>
-                  <div class="col-md-8 list-item-content">
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">230.000<span>đ</span></p>
-                    <p class="desc">Một hợp chất có trong rượu vang gọi là resverato có khả năng làm tăng tối đa tuổi thọ. Resverato còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.</p>
-                    <div class="reaction d-flex">
-                      <div class="action"><a class="btn-main" href="#">ADD TO CART</a></div>
-                      <div class="action"><a href="#"> <i class="fas fa-heart"> </i><span>Yêu Thích</span></a></div>
-                      <div class="action"><a href="#"> <i class="fas fa-signal"></i><span>So Sánh</span></a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-item">
-                  <div class="col-md-4"><img src="../assets/img/4.jpg" alt="image item"></div>
-                  <div class="col-md-8 list-item-content">
-                    <h3 class="name">Rượu vang Đà Lạt</h3>
-                    <p class="price">450.000<span>đ</span></p>
-                    <p class="desc">Một hợp chất có trong rượu vang gọi là resverato có khả năng làm tăng tối đa tuổi thọ. Resverato còn có khả năng ngăn chặn mật độ oxy hóa của protein béo.</p>
-                    <div class="reaction d-flex">
-                      <div class="action"><a class="btn-main" href="#">ADD TO CART</a></div>
-                      <div class="action"><a href="#"> <i class="fas fa-heart"> </i><span>Yêu Thích</span></a></div>
-                      <div class="action"><a href="#"> <i class="fas fa-signal"></i><span>So Sánh</span></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="product-list"></div>
             </div>
           </div>
         </div>
@@ -447,6 +235,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"> </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/lib/owl.carousel.min.js"> </script>
+    <script src="assets/lib/owl.carousel.min.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/panigation.js"></script>
   </body>
 </html>
